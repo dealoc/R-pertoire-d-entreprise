@@ -13,6 +13,8 @@
 		20EBDE4520751DBD00BF8B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EBDE4420751DBD00BF8B3C /* Assets.xcassets */; };
 		20EBDE4820751DBD00BF8B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBDE4620751DBD00BF8B3C /* LaunchScreen.storyboard */; };
 		20EBDE5420751F1700BF8B3C /* AjoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE5320751F1700BF8B3C /* AjoutController.swift */; };
+		20EBDE562075234D00BF8B3C /* ImageArrondie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE552075234D00BF8B3C /* ImageArrondie.swift */; };
+		20EBDE582075247100BF8B3C /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE572075247100BF8B3C /* BoutonArrondi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		20EBDE4720751DBD00BF8B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20EBDE4920751DBD00BF8B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20EBDE5320751F1700BF8B3C /* AjoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutController.swift; sourceTree = "<group>"; };
+		20EBDE552075234D00BF8B3C /* ImageArrondie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArrondie.swift; sourceTree = "<group>"; };
+		20EBDE572075247100BF8B3C /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		20EBDE4F20751DF500BF8B3C /* Vue */ = {
 			isa = PBXGroup;
 			children = (
+				20EBDE552075234D00BF8B3C /* ImageArrondie.swift */,
+				20EBDE572075247100BF8B3C /* BoutonArrondi.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20EBDE3B20751DBC00BF8B3C /* AppDelegate.swift in Sources */,
+				20EBDE562075234D00BF8B3C /* ImageArrondie.swift in Sources */,
 				20EBDE5420751F1700BF8B3C /* AjoutController.swift in Sources */,
+				20EBDE582075247100BF8B3C /* BoutonArrondi.swift in Sources */,
 				20EBDE4320751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

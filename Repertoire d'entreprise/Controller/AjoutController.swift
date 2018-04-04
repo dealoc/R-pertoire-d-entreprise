@@ -12,13 +12,13 @@ class AjoutController: UIViewController {
 
     @IBOutlet weak var scroll: UIScrollView!
     @IBOutlet weak var pickerView: UIPickerView!
-    @IBOutlet weak var imageDeProfil: UIImageView!
+    @IBOutlet weak var imageDeProfil: ImageArrondie!
     @IBOutlet weak var ajouterEntreprise: UIButton!
     @IBOutlet weak var prenomTexteField: UITextField!
     @IBOutlet weak var nomTextField: UITextField!
     @IBOutlet weak var telTextField: UITextField!
     @IBOutlet weak var mailTextField: UITextField!
-    @IBOutlet weak var ajouterPersonneBouton: UIButton!
+    @IBOutlet weak var ajouterPersonneBouton: BoutonArrondi!
     @IBOutlet weak var largeurContrainte: NSLayoutConstraint!
     @IBOutlet weak var contrainteDuBas: NSLayoutConstraint!
     
@@ -32,6 +32,14 @@ class AjoutController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = .lightGray
+        largeurContrainte.constant = view.frame.width
+        scroll.contentSize = CGSize(width: largeurContrainte.constant, height: scroll.frame.height)
     }
     
     @IBAction func ajouterPersonneAction(_ sender: Any) {
