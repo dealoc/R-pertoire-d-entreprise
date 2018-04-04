@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ajout Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AjoutController" customModule="Repertoire_d_entreprise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-rq-epL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-Tl-VhF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="bDg-r9-JE8"/>
+                                            <constraint firstAttribute="height" constant="128" id="iM6-3S-3LY"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zt7-7E-8A8">
+                                        <rect key="frame" x="97" y="206" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="OHQ-ji-dwV"/>
+                                            <constraint firstAttribute="width" constant="180" id="cGV-Ue-44a"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmG-BT-PzJ">
+                                        <rect key="frame" x="8" y="136" width="359" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="kAt-Ab-FDz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="ajouterEntrepriseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG0-In-bK8"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="law-Uw-VNl">
+                                        <rect key="frame" x="20" y="406" width="335" height="180"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52j-7D-ze7">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8A-iQ-VgQ">
+                                                <rect key="frame" x="0.0" y="50" width="335" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNy-W9-MeN">
+                                                <rect key="frame" x="0.0" y="100" width="335" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gd7-SZ-VsT">
+                                                <rect key="frame" x="0.0" y="150" width="335" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="0nq-Zz-7ox"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXq-6n-gxC">
+                                        <rect key="frame" x="20" y="616" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fGv-OC-NFW"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="ajouterPersonneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sgo-gv-a46"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Kpd-Tl-VhF" secondAttribute="trailing" id="1wn-V3-nEl"/>
+                                    <constraint firstAttribute="bottom" secondItem="IXq-6n-gxC" secondAttribute="bottom" constant="50" id="3cM-kC-HA2"/>
+                                    <constraint firstItem="Kpd-Tl-VhF" firstAttribute="leading" secondItem="lPy-rq-epL" secondAttribute="leading" id="7hI-pa-sMd"/>
+                                    <constraint firstItem="law-Uw-VNl" firstAttribute="top" secondItem="Zt7-7E-8A8" secondAttribute="bottom" constant="20" id="FJr-HQ-zIN"/>
+                                    <constraint firstItem="Kpd-Tl-VhF" firstAttribute="top" secondItem="lPy-rq-epL" secondAttribute="top" id="K0E-vT-vFN"/>
+                                    <constraint firstItem="law-Uw-VNl" firstAttribute="leading" secondItem="lPy-rq-epL" secondAttribute="leading" constant="20" id="KaN-hd-q0J"/>
+                                    <constraint firstAttribute="trailing" secondItem="EmG-BT-PzJ" secondAttribute="trailing" constant="8" id="Lpx-pz-9ad"/>
+                                    <constraint firstItem="IXq-6n-gxC" firstAttribute="top" secondItem="law-Uw-VNl" secondAttribute="bottom" constant="30" id="P1t-rL-HeC"/>
+                                    <constraint firstItem="Zt7-7E-8A8" firstAttribute="top" secondItem="EmG-BT-PzJ" secondAttribute="bottom" constant="20" id="SVJ-WS-GEK"/>
+                                    <constraint firstItem="Zt7-7E-8A8" firstAttribute="centerX" secondItem="lPy-rq-epL" secondAttribute="centerX" id="V2h-b7-SgP"/>
+                                    <constraint firstItem="EmG-BT-PzJ" firstAttribute="leading" secondItem="lPy-rq-epL" secondAttribute="leading" constant="8" id="dWS-nT-Mec"/>
+                                    <constraint firstAttribute="trailing" secondItem="law-Uw-VNl" secondAttribute="trailing" constant="20" id="eCg-ns-bjN"/>
+                                    <constraint firstItem="IXq-6n-gxC" firstAttribute="leading" secondItem="lPy-rq-epL" secondAttribute="leading" constant="20" id="izL-if-HCc"/>
+                                    <constraint firstItem="EmG-BT-PzJ" firstAttribute="top" secondItem="Kpd-Tl-VhF" secondAttribute="bottom" constant="8" id="n4d-RB-hdg"/>
+                                    <constraint firstAttribute="trailing" secondItem="IXq-6n-gxC" secondAttribute="trailing" constant="20" id="xh1-Lo-Fy2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lPy-rq-epL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Xm-VX-YTh"/>
+                            <constraint firstItem="lPy-rq-epL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Ii-R4-9aP"/>
+                            <constraint firstItem="lPy-rq-epL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9HN-5J-nHN"/>
+                            <constraint firstItem="lPy-rq-epL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q7K-An-mQI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ajouterEntreprise" destination="EmG-BT-PzJ" id="Cz0-aI-nUg"/>
+                        <outlet property="ajouterPersonneBouton" destination="IXq-6n-gxC" id="luF-ew-JW3"/>
+                        <outlet property="contrainteDuBas" destination="Q7K-An-mQI" id="RUh-DL-ZqY"/>
+                        <outlet property="imageDeProfil" destination="Zt7-7E-8A8" id="1ql-c1-Wx4"/>
+                        <outlet property="largeurContrainte" destination="bDg-r9-JE8" id="oZc-GN-cYR"/>
+                        <outlet property="mailTextField" destination="gd7-SZ-VsT" id="6zi-tD-WVk"/>
+                        <outlet property="nomTextField" destination="e8A-iQ-VgQ" id="SXv-PJ-YXt"/>
+                        <outlet property="pickerView" destination="Kpd-Tl-VhF" id="Pg1-IN-lhN"/>
+                        <outlet property="prenomTexteField" destination="52j-7D-ze7" id="0Yf-sQ-xnz"/>
+                        <outlet property="scroll" destination="lPy-rq-epL" id="EOy-NY-ygw"/>
+                        <outlet property="telTextField" destination="KNy-W9-MeN" id="XpP-nj-pr3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
