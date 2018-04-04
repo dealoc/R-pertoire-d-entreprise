@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2082CCBA2075291E008189B8 /* Constante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCB92075291E008189B8 /* Constante.swift */; };
+		2082CCBC20752DB1008189B8 /* ImagePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */; };
+		2082CCBE2075349B008189B8 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCBD2075349B008189B8 /* TextFieldExtension.swift */; };
 		20EBDE3B20751DBC00BF8B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE3A20751DBC00BF8B3C /* AppDelegate.swift */; };
 		20EBDE4020751DBC00BF8B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBDE3E20751DBC00BF8B3C /* Main.storyboard */; };
 		20EBDE4320751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE4120751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		2082CCB92075291E008189B8 /* Constante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constante.swift; sourceTree = "<group>"; };
+		2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExtension.swift; sourceTree = "<group>"; };
+		2082CCBD2075349B008189B8 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		20EBDE3720751DBC00BF8B3C /* Repertoire d'entreprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Repertoire d'entreprise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EBDE3A20751DBC00BF8B3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EBDE3F20751DBC00BF8B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			children = (
 				20EBDE5320751F1700BF8B3C /* AjoutController.swift */,
 				20EBDE592075259200BF8B3C /* PickerViewExtension.swift */,
+				2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */,
+				2082CCBD2075349B008189B8 /* TextFieldExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,9 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2082CCBE2075349B008189B8 /* TextFieldExtension.swift in Sources */,
 				20EBDE3B20751DBC00BF8B3C /* AppDelegate.swift in Sources */,
 				20EBDE562075234D00BF8B3C /* ImageArrondie.swift in Sources */,
 				20EBDE5A2075259300BF8B3C /* PickerViewExtension.swift in Sources */,
+				2082CCBC20752DB1008189B8 /* ImagePickerExtension.swift in Sources */,
 				20EBDE5420751F1700BF8B3C /* AjoutController.swift in Sources */,
 				2082CCBA2075291E008189B8 /* Constante.swift in Sources */,
 				20EBDE582075247100BF8B3C /* BoutonArrondi.swift in Sources */,

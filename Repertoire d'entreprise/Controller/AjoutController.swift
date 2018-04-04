@@ -24,11 +24,14 @@ class AjoutController: UIViewController {
     @IBOutlet weak var contrainteDuBas: NSLayoutConstraint!
     
     var entreprises = [Entreprise]()
+    var imagePicker: UIImagePickerController?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        miseEnPlaceImagePicker()
         miseEnPlacePicker()
+        miseEnPlaceTextField()
         fetchEntreprise()
     }
 
