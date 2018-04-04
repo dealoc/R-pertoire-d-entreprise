@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2082CCBA2075291E008189B8 /* Constante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCB92075291E008189B8 /* Constante.swift */; };
 		20EBDE3B20751DBC00BF8B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE3A20751DBC00BF8B3C /* AppDelegate.swift */; };
 		20EBDE4020751DBC00BF8B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBDE3E20751DBC00BF8B3C /* Main.storyboard */; };
 		20EBDE4320751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE4120751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2082CCB92075291E008189B8 /* Constante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constante.swift; sourceTree = "<group>"; };
 		20EBDE3720751DBC00BF8B3C /* Repertoire d'entreprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Repertoire d'entreprise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EBDE3A20751DBC00BF8B3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EBDE3F20751DBC00BF8B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2082CCB820752909008189B8 /* Utilitaire */ = {
+			isa = PBXGroup;
+			children = (
+				2082CCB92075291E008189B8 /* Constante.swift */,
+			);
+			path = Utilitaire;
+			sourceTree = "<group>";
+		};
 		20EBDE2E20751DBC00BF8B3C = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		20EBDE3920751DBC00BF8B3C /* Repertoire d'entreprise */ = {
 			isa = PBXGroup;
 			children = (
+				2082CCB820752909008189B8 /* Utilitaire */,
 				20EBDE5120751E0200BF8B3C /* Modele */,
 				20EBDE4F20751DF500BF8B3C /* Vue */,
 				20EBDE5020751DFD00BF8B3C /* Controller */,
@@ -183,6 +194,7 @@
 				20EBDE562075234D00BF8B3C /* ImageArrondie.swift in Sources */,
 				20EBDE5A2075259300BF8B3C /* PickerViewExtension.swift in Sources */,
 				20EBDE5420751F1700BF8B3C /* AjoutController.swift in Sources */,
+				2082CCBA2075291E008189B8 /* Constante.swift in Sources */,
 				20EBDE582075247100BF8B3C /* BoutonArrondi.swift in Sources */,
 				20EBDE4320751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld in Sources */,
 			);

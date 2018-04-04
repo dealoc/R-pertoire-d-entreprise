@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AjoutController: UIViewController {
 
@@ -22,14 +23,13 @@ class AjoutController: UIViewController {
     @IBOutlet weak var largeurContrainte: NSLayoutConstraint!
     @IBOutlet weak var contrainteDuBas: NSLayoutConstraint!
     
-    var testPicker = ["Apple","Alphabet","Big Blue","Microsoft","FaceBook"]
+    var entreprises = [Entreprise]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         miseEnPlacePicker()
-
-        // Do any additional setup after loading the view.
+        fetchEntreprise()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +42,18 @@ class AjoutController: UIViewController {
         super.viewWillAppear(animated)
         largeurContrainte.constant = view.frame.width
         scroll.contentSize = CGSize(width: largeurContrainte.constant, height: scroll.frame.height)
+    }
+    
+    func fetchEntreprise() {
+        
+        let requete: NSFetchRequest<Entreprise> = Entreprise.fetchRequest()
+        do {
+            entreprises = try contexte.fetch(requete)
+            pickerView.reloadAllComponents()
+        } catch {
+            print(error.localizedDescription)
+        }
+        
     }
     
     @IBAction func ajouterPersonneAction(_ sender: Any) {
