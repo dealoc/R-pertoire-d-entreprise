@@ -47,6 +47,8 @@ class AjoutController: UIViewController {
     func fetchEntreprise() {
         
         let requete: NSFetchRequest<Entreprise> = Entreprise.fetchRequest()
+        let tri = NSSortDescriptor(key: "nom", ascending: true)
+        requete.sortDescriptors = [tri]
         do {
             entreprises = try contexte.fetch(requete)
             pickerView.reloadAllComponents()
@@ -56,10 +58,38 @@ class AjoutController: UIViewController {
         
     }
     
-    @IBAction func ajouterPersonneAction(_ sender: Any) {
+    @IBAction func ajouterEntrepriseAction(_ sender: Any) {
+        let alerte = UIAlertController(title: "Votre entreprise n'est pas dans la liste ?", message: "Ajouter", preferredStyle: .alert)
+        let ajout = UIAlertAction(title: "OK", style: .default) { (action) in
+            let texteField = alerte.textFields![0] as UITextField
+            if let texte = texteField.text, texte != "" {
+                let nouvelleEntreprise = Entreprise(context: contexte)
+                nouvelleEntreprise.nom = texte
+                appDelegate.saveContext()
+                self.fetchEntreprise()
+            }
+        }
+        alerte.addTextField { (tf) in
+            tf.placeholder = "nom de l'entreprise"
+        }
+        let annuler = UIAlertAction(title: "Annuler", style: .default, handler: nil)
+        alerte.addAction(ajout)
+        alerte.addAction(annuler)
+        self.present(alerte, animated: true, completion: nil)
     }
     
-    @IBAction func ajouterEntrepriseAction(_ sender: Any) {
+    @IBAction func ajouterPersonneAction(_ sender: Any) {
+        
     }
+    
+
     
 }
+
+
+
+
+
+
+
+
