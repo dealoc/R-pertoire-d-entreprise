@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		20EBDE3B20751DBC00BF8B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE3A20751DBC00BF8B3C /* AppDelegate.swift */; };
-		20EBDE3D20751DBC00BF8B3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE3C20751DBC00BF8B3C /* ViewController.swift */; };
 		20EBDE4020751DBC00BF8B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBDE3E20751DBC00BF8B3C /* Main.storyboard */; };
 		20EBDE4320751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20EBDE4120751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld */; };
 		20EBDE4520751DBD00BF8B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EBDE4420751DBD00BF8B3C /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		20EBDE3720751DBC00BF8B3C /* Repertoire d'entreprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Repertoire d'entreprise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EBDE3A20751DBC00BF8B3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20EBDE3C20751DBC00BF8B3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20EBDE3F20751DBC00BF8B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20EBDE4220751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Repertoire_d_entreprise.xcdatamodel; sourceTree = "<group>"; };
 		20EBDE4420751DBD00BF8B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +54,46 @@
 		20EBDE3920751DBC00BF8B3C /* Repertoire d'entreprise */ = {
 			isa = PBXGroup;
 			children = (
+				20EBDE5120751E0200BF8B3C /* Modele */,
+				20EBDE4F20751DF500BF8B3C /* Vue */,
+				20EBDE5020751DFD00BF8B3C /* Controller */,
+				20EBDE5220751E0600BF8B3C /* Storyboard */,
 				20EBDE3A20751DBC00BF8B3C /* AppDelegate.swift */,
-				20EBDE3C20751DBC00BF8B3C /* ViewController.swift */,
-				20EBDE3E20751DBC00BF8B3C /* Main.storyboard */,
 				20EBDE4420751DBD00BF8B3C /* Assets.xcassets */,
-				20EBDE4620751DBD00BF8B3C /* LaunchScreen.storyboard */,
 				20EBDE4920751DBD00BF8B3C /* Info.plist */,
-				20EBDE4120751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld */,
 			);
 			path = "Repertoire d'entreprise";
+			sourceTree = "<group>";
+		};
+		20EBDE4F20751DF500BF8B3C /* Vue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vue;
+			sourceTree = "<group>";
+		};
+		20EBDE5020751DFD00BF8B3C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20EBDE5120751E0200BF8B3C /* Modele */ = {
+			isa = PBXGroup;
+			children = (
+				20EBDE4120751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld */,
+			);
+			path = Modele;
+			sourceTree = "<group>";
+		};
+		20EBDE5220751E0600BF8B3C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				20EBDE3E20751DBC00BF8B3C /* Main.storyboard */,
+				20EBDE4620751DBD00BF8B3C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EBDE3D20751DBC00BF8B3C /* ViewController.swift in Sources */,
 				20EBDE3B20751DBC00BF8B3C /* AppDelegate.swift in Sources */,
 				20EBDE4320751DBC00BF8B3C /* Repertoire_d_entreprise.xcdatamodeld in Sources */,
 			);
@@ -291,7 +319,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dealoc.Repertoire-d-entreprise";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dealoc.Morpion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dealoc.Repertoire-d-entreprise";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dealoc.Morpion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
