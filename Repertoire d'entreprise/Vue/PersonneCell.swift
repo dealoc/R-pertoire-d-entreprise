@@ -23,10 +23,10 @@ class PersonneCell: UITableViewCell {
         photoDeProfil.image = self.personne.photo as? UIImage
         var nomComplet = ""
         if let prenom = self.personne.prenom {
-            nomComplet += "Prenom: " + prenom + " "
+            nomComplet += prenom + " "
         }
         if let nom = self.personne.nom {
-            nomComplet += "Nom: " + nom
+            nomComplet += nom
         }
         nomEtPrenom.text = nomComplet
         let num = String(self.personne.numero) 
