@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2056759D207630DF003144BA /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2056759C207630DF003144BA /* NotificationCenterExtension.swift */; };
+		2056759F2076398D003144BA /* AccueilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2056759E2076398D003144BA /* AccueilController.swift */; };
+		205675A120763A1F003144BA /* PersonneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675A020763A1F003144BA /* PersonneCell.swift */; };
 		2082CCBA2075291E008189B8 /* Constante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCB92075291E008189B8 /* Constante.swift */; };
 		2082CCBC20752DB1008189B8 /* ImagePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */; };
 		2082CCBE2075349B008189B8 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCBD2075349B008189B8 /* TextFieldExtension.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		2056759C207630DF003144BA /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
+		2056759E2076398D003144BA /* AccueilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccueilController.swift; sourceTree = "<group>"; };
+		205675A020763A1F003144BA /* PersonneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonneCell.swift; sourceTree = "<group>"; };
 		2082CCB92075291E008189B8 /* Constante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constante.swift; sourceTree = "<group>"; };
 		2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExtension.swift; sourceTree = "<group>"; };
 		2082CCBD2075349B008189B8 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 			children = (
 				20EBDE552075234D00BF8B3C /* ImageArrondie.swift */,
 				20EBDE572075247100BF8B3C /* BoutonArrondi.swift */,
+				205675A020763A1F003144BA /* PersonneCell.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */,
 				2082CCBD2075349B008189B8 /* TextFieldExtension.swift */,
 				2056759C207630DF003144BA /* NotificationCenterExtension.swift */,
+				2056759E2076398D003144BA /* AccueilController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,8 +209,10 @@
 				20EBDE3B20751DBC00BF8B3C /* AppDelegate.swift in Sources */,
 				20EBDE562075234D00BF8B3C /* ImageArrondie.swift in Sources */,
 				20EBDE5A2075259300BF8B3C /* PickerViewExtension.swift in Sources */,
+				2056759F2076398D003144BA /* AccueilController.swift in Sources */,
 				2082CCBC20752DB1008189B8 /* ImagePickerExtension.swift in Sources */,
 				2056759D207630DF003144BA /* NotificationCenterExtension.swift in Sources */,
+				205675A120763A1F003144BA /* PersonneCell.swift in Sources */,
 				20EBDE5420751F1700BF8B3C /* AjoutController.swift in Sources */,
 				2082CCBA2075291E008189B8 /* Constante.swift in Sources */,
 				20EBDE582075247100BF8B3C /* BoutonArrondi.swift in Sources */,
