@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2056759D207630DF003144BA /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2056759C207630DF003144BA /* NotificationCenterExtension.swift */; };
 		2082CCBA2075291E008189B8 /* Constante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCB92075291E008189B8 /* Constante.swift */; };
 		2082CCBC20752DB1008189B8 /* ImagePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */; };
 		2082CCBE2075349B008189B8 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082CCBD2075349B008189B8 /* TextFieldExtension.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2056759C207630DF003144BA /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
 		2082CCB92075291E008189B8 /* Constante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constante.swift; sourceTree = "<group>"; };
 		2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExtension.swift; sourceTree = "<group>"; };
 		2082CCBD2075349B008189B8 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				20EBDE592075259200BF8B3C /* PickerViewExtension.swift */,
 				2082CCBB20752DB1008189B8 /* ImagePickerExtension.swift */,
 				2082CCBD2075349B008189B8 /* TextFieldExtension.swift */,
+				2056759C207630DF003144BA /* NotificationCenterExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				20EBDE562075234D00BF8B3C /* ImageArrondie.swift in Sources */,
 				20EBDE5A2075259300BF8B3C /* PickerViewExtension.swift in Sources */,
 				2082CCBC20752DB1008189B8 /* ImagePickerExtension.swift in Sources */,
+				2056759D207630DF003144BA /* NotificationCenterExtension.swift in Sources */,
 				20EBDE5420751F1700BF8B3C /* AjoutController.swift in Sources */,
 				2082CCBA2075291E008189B8 /* Constante.swift in Sources */,
 				20EBDE582075247100BF8B3C /* BoutonArrondi.swift in Sources */,

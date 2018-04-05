@@ -32,6 +32,7 @@ class AjoutController: UIViewController {
         miseEnPlaceImagePicker()
         miseEnPlacePicker()
         miseEnPlaceTextField()
+        miseEnPlaceNotification()
         fetchEntreprise()
     }
 

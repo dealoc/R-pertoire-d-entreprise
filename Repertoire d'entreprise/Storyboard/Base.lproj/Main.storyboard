@@ -22,34 +22,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-Tl-VhF">
-                                        <rect key="frame" x="0.0" y="10" width="375" height="128"/>
+                                        <rect key="frame" x="0.0" y="230" width="375" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="375" id="bDg-r9-JE8"/>
                                             <constraint firstAttribute="height" constant="128" id="iM6-3S-3LY"/>
                                         </constraints>
                                     </pickerView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zt7-7E-8A8" customClass="ImageArrondie" customModule="Repertoire_d_entreprise" customModuleProvider="target">
-                                        <rect key="frame" x="97" y="216" width="180" height="180"/>
+                                        <rect key="frame" x="97" y="35" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="OHQ-ji-dwV"/>
                                             <constraint firstAttribute="width" constant="180" id="cGV-Ue-44a"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmG-BT-PzJ">
-                                        <rect key="frame" x="8" y="146" width="359" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="kAt-Ab-FDz"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Vous ne trouvez pas votre entreprise ?">
-                                            <color key="titleColor" red="1" green="0.0" blue="0.01164490638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ajouterEntrepriseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG0-In-bK8"/>
-                                        </connections>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="law-Uw-VNl">
-                                        <rect key="frame" x="20" y="416" width="335" height="180"/>
+                                        <rect key="frame" x="20" y="436" width="335" height="180"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prénom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52j-7D-ze7">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
@@ -81,7 +68,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXq-6n-gxC" customClass="BoutonArrondi" customModule="Repertoire_d_entreprise" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="626" width="335" height="50"/>
+                                        <rect key="frame" x="20" y="646" width="335" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="fGv-OC-NFW"/>
                                         </constraints>
@@ -90,22 +77,35 @@
                                             <action selector="ajouterPersonneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sgo-gv-a46"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmG-BT-PzJ">
+                                        <rect key="frame" x="8" y="366" width="359" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="kAt-Ab-FDz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Vous ne trouvez pas votre entreprise ?">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.01164490638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ajouterEntrepriseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG0-In-bK8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Kpd-Tl-VhF" secondAttribute="trailing" id="1wn-V3-nEl"/>
                                     <constraint firstAttribute="bottom" secondItem="IXq-6n-gxC" secondAttribute="bottom" constant="50" id="3cM-kC-HA2"/>
+                                    <constraint firstItem="law-Uw-VNl" firstAttribute="top" secondItem="EmG-BT-PzJ" secondAttribute="bottom" constant="20" id="3wn-S1-APK"/>
                                     <constraint firstItem="Kpd-Tl-VhF" firstAttribute="leading" secondItem="lPy-rq-epL" secondAttribute="leading" id="7hI-pa-sMd"/>
-                                    <constraint firstItem="law-Uw-VNl" firstAttribute="top" secondItem="Zt7-7E-8A8" secondAttribute="bottom" constant="20" id="FJr-HQ-zIN"/>
-                                    <constraint firstItem="Kpd-Tl-VhF" firstAttribute="top" secondItem="lPy-rq-epL" secondAttribute="top" constant="10" id="K0E-vT-vFN"/>
                                     <constraint firstItem="law-Uw-VNl" firstAttribute="leading" secondItem="lPy-rq-epL" secondAttribute="leading" constant="20" id="KaN-hd-q0J"/>
                                     <constraint firstAttribute="trailing" secondItem="EmG-BT-PzJ" secondAttribute="trailing" constant="8" id="Lpx-pz-9ad"/>
                                     <constraint firstItem="IXq-6n-gxC" firstAttribute="top" secondItem="law-Uw-VNl" secondAttribute="bottom" constant="30" id="P1t-rL-HeC"/>
-                                    <constraint firstItem="Zt7-7E-8A8" firstAttribute="top" secondItem="EmG-BT-PzJ" secondAttribute="bottom" constant="20" id="SVJ-WS-GEK"/>
                                     <constraint firstItem="Zt7-7E-8A8" firstAttribute="centerX" secondItem="lPy-rq-epL" secondAttribute="centerX" id="V2h-b7-SgP"/>
                                     <constraint firstItem="EmG-BT-PzJ" firstAttribute="leading" secondItem="lPy-rq-epL" secondAttribute="leading" constant="8" id="dWS-nT-Mec"/>
                                     <constraint firstAttribute="trailing" secondItem="law-Uw-VNl" secondAttribute="trailing" constant="20" id="eCg-ns-bjN"/>
+                                    <constraint firstItem="Zt7-7E-8A8" firstAttribute="top" secondItem="lPy-rq-epL" secondAttribute="top" constant="35" id="h1l-33-RJW"/>
                                     <constraint firstItem="IXq-6n-gxC" firstAttribute="leading" secondItem="lPy-rq-epL" secondAttribute="leading" constant="20" id="izL-if-HCc"/>
                                     <constraint firstItem="EmG-BT-PzJ" firstAttribute="top" secondItem="Kpd-Tl-VhF" secondAttribute="bottom" constant="8" id="n4d-RB-hdg"/>
+                                    <constraint firstItem="Kpd-Tl-VhF" firstAttribute="top" secondItem="Zt7-7E-8A8" secondAttribute="bottom" constant="15" id="uMo-S6-KHc"/>
                                     <constraint firstAttribute="trailing" secondItem="IXq-6n-gxC" secondAttribute="trailing" constant="20" id="xh1-Lo-Fy2"/>
                                 </constraints>
                             </scrollView>
