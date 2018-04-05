@@ -103,7 +103,7 @@ class AjoutController: UIViewController {
         nouvellePersonne.employeur = entreprises[pickerView.selectedRow(inComponent: 0)]
         
         appDelegate.saveContext()
-        
+        navigationController?.popViewController(animated: true)
         
     }
     
